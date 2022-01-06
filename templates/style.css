@@ -1,6 +1,4 @@
 .enter{
-    padding-top: 500px;
-    padding-left: 800px;
     background-color: black;
 }
 
@@ -9,6 +7,9 @@
 }
 
 .form{
+    position: absolute;
+    top: 50%;
+    left: 40%;
     height: 100px;
     width: 400px;
 }
