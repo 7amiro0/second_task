@@ -1,0 +1,55 @@
+.enter{
+    padding-top: 500px;
+    padding-left: 800px;
+    background-color: black;
+}
+
+.list{
+    background-color: black;
+}
+
+.form{
+    height: 100px;
+    width: 400px;
+}
+
+.input-form{
+    display: flex;
+    width: 500px;
+}
+
+.input-form label{
+    margin-right: 10px;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.button-form{
+    height: 40px;
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+
+.name{
+    margin: 30px 70px
+}
+
+.label-name{
+    display: block;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.name-list{
+    display: block;
+    width: 240px;
+    margin-top: 10px;
+    color: white;
+    font-style: normal;
+}
+
+.all-names{
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
