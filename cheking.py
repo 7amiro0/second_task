@@ -1,9 +1,12 @@
+"""This file checks the input value."""
+
 from flask import Flask, render_template, request, send_file
 
+
 def main():
+    """Main fun."""
     app = Flask('__name__', template_folder='templates')
     list_name = []
-    res = ''
 
     @app.route('/hello/')
     def hello():
@@ -38,5 +41,6 @@ def main():
         return send_file('templates/style.css')
 
     app.run(debug=True)
+
 
 main()
