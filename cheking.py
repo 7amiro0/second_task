@@ -8,19 +8,21 @@ def main():
     app = Flask('__name__', template_folder='templates')
     list_name = []
 
-    @app.route('/hello/')
+    @app.route('/main/index/home/')
     def hello():
         return render_template('main.html')
 
     def cheking(name, list_name):
-        if str(name).split("'")[3] in set(list_name):
-            result = 'Вже бачилися, ' + str(name).split("'")[3]
-        elif str(name).split("'")[3] not in set(list_name):
-            list_name.append(str(name).split("'")[3])
-            result = 'Привіт ' + str(name).split("'")[3]
+        title = str(name).split("'")[3]
+        set_list = set(list_name)
+        if title in set_list:
+            result = 'Вже бачилися, ' + title
+        elif title not in set_list:
+            list_name.append(title)
+            result = 'Привіт ' + title
         return result
 
-    @app.route('/hello/', methods=['POST', 'GET'])
+    @app.route('/main/index/home/', methods=['POST', 'GET'])
     def result():
         name = request.form
         return render_template('main.html', name=cheking(name, list_name))
@@ -29,14 +31,12 @@ def main():
     def style_enter():
         return send_file('templates/style.css')
 
-    @app.route('/hello/list/', methods=['POST', 'GET'])
+    @app.route('/main/index/home/list/', methods=['POST', 'GET'])
     def all_name():
-        res = ''
-        for name in list_name:
-            res += name + ', '
+        res = ', '.join(list_name)
         return render_template('list_name.html', all_names=res)
 
-    @app.route('/hello/list/style.css')
+    @app.route('/main/index/home/list/style.css')
     def style_list():
         return send_file('templates/style.css')
 
