@@ -3,4 +3,4 @@
 # Как запустить?
 ``` $python cheking.py ```
 # Ссылка на основную страницу
-``` localhost:5000/hello ```
+``` localhost:5000/main/index/home/ ```
