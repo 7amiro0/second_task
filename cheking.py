@@ -6,7 +6,7 @@ from flask import Flask, render_template, request, send_file
 def main():
     """Main fun."""
     app = Flask('__name__', template_folder='templates')
-    list_name = []
+    list_name = set()
 
     @app.route('/main/index/home/')
     def hello():
@@ -18,7 +18,7 @@ def main():
         if title in set_list:
             result = 'Вже бачилися, ' + title
         elif title not in set_list:
-            list_name.append(title)
+            list_name.add(title)
             result = 'Привіт ' + title
         return result
 
