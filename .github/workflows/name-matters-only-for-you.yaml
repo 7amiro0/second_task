@@ -8,5 +8,6 @@ jobs:
       - run: pip install flask-restful
       - name: Check out repository code
         uses: actions/checkout@v2
-      - run: python cheking.py
-      - run: exit 0 
+      - run: |
+             python cheking.py
+             exit 0 
