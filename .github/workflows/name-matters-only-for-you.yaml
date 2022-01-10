@@ -5,9 +5,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: pip install flask-restful
+      - run: | 
+              pip install pylint
+              pip install pydocstyle
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: |
-             python cheking.py
-             exit 0 
+             pylint cheking.py
+             pydocstyle cheking.py 
