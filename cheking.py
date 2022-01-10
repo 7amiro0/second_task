@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, send_file
 
 
 def main():
-    """Main."""
+    """Start fun."""
     app = Flask('__name__', template_folder='templates')
     list_name = set()
 
