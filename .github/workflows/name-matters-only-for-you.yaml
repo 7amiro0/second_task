@@ -5,7 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo"cd ../\n"
+      - run: echo"cd ../"
       - run: echo"ls\n"
       - run: echo"cd ../\n"
       - run: echo"ls\n"
