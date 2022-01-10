@@ -5,6 +5,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: pip install flask
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: python cheking.py
