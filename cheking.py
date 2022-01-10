@@ -14,10 +14,10 @@ def main():
 
     def cheking(name, list_name):
         title = str(name).split("'")[3]
-        set_list = set(list_name)
-        if title in set_list:
+
+        if title in list_name:
             result = 'Вже бачилися, ' + title
-        elif title not in set_list:
+        elif title not in list_name:
             list_name.add(title)
             result = 'Привіт ' + title
         return result
