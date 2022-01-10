@@ -5,8 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: cd ../
-      - run: ls
-      - run: cd ../
-      - run: ls
-      - run: python cheking.py
+      - run: echo"cd ../\n"
+      - run: echo"ls\n"
+      - run: echo"cd ../\n"
+      - run: echo"ls\n"
+      - run: echo"python cheking.py\n"
