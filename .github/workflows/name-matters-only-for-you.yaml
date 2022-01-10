@@ -8,6 +8,7 @@ jobs:
       - run: | 
               pip install pylint
               pip install pydocstyle
+              pip install flask-restful
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: |
