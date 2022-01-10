@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: cd ../
       - run: cd ../
-      - run: cheking.py
+      - run: python cheking.py
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
